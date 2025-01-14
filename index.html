@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kusion - Open Source Platform Orchestrator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="grid-background">
+        <div class="grid"></div>
+    </div>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="https://www.kusionstack.io/">Kusion</a>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#use-cases">Use Cases</a>
+                <a href="https://www.kusionstack.io/docs/next/" target="_blank">Documentation</a>
+                <div class="navbar-right">
+                    <a href="https://github.com/KusionStack/kusion" class="github-button" target="_blank">
+                        <svg viewBox="0 0 16 16" aria-hidden="true">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                        </svg>
+                        <span>View on GitHub</span>
+                    </a>
+                </div>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>App Delivery Made Simple<span class="gradient-text"></span></h1>
+                <p class="subtitle typewriter"><span class="typing"></span><span class="cursor">|</span></p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">Codified</span>
+                        <span class="stat-label">Configurations</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">Resource</span>
+                        <span class="stat-label">Management</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">Seamless</span>
+                        <span class="stat-label">Collaboration</span>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <div class="cta-group">
+                        <a href="https://www.kusionstack.io/docs/next/getting-started/install-kusion" class="primary-button" target="_blank">
+                            <span>Get Started</span>
+                        </a>
+                        <a href="https://github.com/KusionStack/kusion" class="secondary-button" target="_blank">
+                            <span>View On GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="gradient-blob"></div>
+                <img src="images/og.png" alt="Kusion Architecture Overview" class="main-image">
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Features</span>
+                <h2><span class="gradient-text">Why Kusion?</span></h2>
+                <p>Modern solutions for modern deployment challenges</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Everything as Code</h3>
+                    <p>Codify your entire application lifecycle, from infrastructure provisioning to application deployment and beyond. No more manual steps or configuration drift.</p>
+                    <a href="https://www.kusionstack.io/docs/next/" class="learn-more" target="_blank">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-diagram-project"></i>
+                    </div>
+                    <h3>Unified Workflow</h3>
+                    <p>Manage both infrastructure and Kubernetes resources in a single, consistent workflow. Experience the simplicity of Terraform-like operations for your entire stack.</p>
+                    <a href="https://www.kusionstack.io/docs/next/user-guides/working-with-k8s/deploy-application" class="learn-more" target="_blank">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users-gear"></i>
+                    </div>
+                    <h3>Separation of Concerns</h3>
+                    <p>Orchestrate configurations from multiple sources and roles. Enable smooth collaboration between platform teams, developers, and operators.</p>
+                    <a href="https://www.kusionstack.io/docs/next/" class="learn-more" target="_blank">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <h3>Extensible Platform</h3>
+                    <p>Built for growth with modular support for any cloud resources or runtimes. Easily extend beyond Kubernetes and Terraform to meet your own organizational needs.</p>
+                    <a href="https://www.kusionstack.io/docs/next/" class="learn-more" target="_blank">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="use-cases" class="use-cases">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Use Cases</span>
+                <h2><span class="gradient-text">Power Your Applications</span></h2>
+                <p>Discover how Kusion can transform your deployment workflow</p>
+            </div>
+            <div class="use-case-grid">
+                <div class="use-case-card">
+                    <div class="use-case-content">
+                        <h3>End-to-end Lifecycle Management</h3>
+                        <p>Take control of your entire application lifecycle with a codified approach</p>
+                        <ul class="feature-list">
+                            <li><i class="far fa-lightbulb"></i> Infrastructure and workload provision</li>
+                            <li><i class="far fa-lightbulb"></i> Manage ephemeral environments</li>
+                            <li><i class="far fa-lightbulb"></i> Preview change differences in detail</li>
+                            <li><i class="far fa-lightbulb"></i> Version control & state management</li>
+                        </ul>
+                    </div>
+                    <div class="use-case-image">
+                        <img src="images/application-lifecycle.png" alt="Application Lifecycle Management - A dynamic visualization showing the continuous cycle of creating, configuring, monitoring, and updating application resources">
+                    </div>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-content">
+                        <h3>Protocol-Driven Collaboration</h3>
+                        <p>Enable seamless collaboration across your organization</p>
+                        <ul class="feature-list">
+                            <li><i class="far fa-lightbulb"></i> Developer self-service</li>
+                            <li><i class="far fa-lightbulb"></i> Dynamic configuration management</li>
+                            <li><i class="far fa-lightbulb"></i> Paved golden paths</li>
+                            <li><i class="far fa-lightbulb"></i> Built-in security & compliance</li>
+                        </ul>
+                    </div>
+                    <div class="use-case-image">
+                        <img src="images/separation-of-concerns.png" alt="Team Collaboration - A visualization showing how different teams interact through the KusionStack platform">
+                    </div>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-content">
+                        <h3>Application Resource Graphs</h3>
+                        <p>Understand how your application resources interact</p>
+                        <ul class="feature-list">
+                            <li><i class="far fa-lightbulb"></i> Visualize resource topology</li>
+                            <li><i class="far fa-lightbulb"></i> Cloud resource mapping</li>
+                            <li><i class="far fa-lightbulb"></i> Automated dependency injection</li>
+                            <li><i class="far fa-lightbulb"></i> Resource watching</li>
+                        </ul>
+                    </div>
+                    <div class="use-case-image">
+                        <img src="images/separation-of-concerns.png" alt="Team Collaboration - A visualization showing how different teams interact through the KusionStack platform">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="get-started" class="get-started">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get Started</span>
+                <h2>Start Building with Kusion</h2>
+                <p>Begin your journey with Kusion in minutes</p>
+            </div>
+            <div class="code-block-container">
+                <div class="code-block">
+                    <div class="code-header">
+                        <span><i class="fa fa-gears"></i> Install With Helm</span>
+                        <div class="copy-buttons">
+                            <button class="copy-button" onclick="copyCode('kusion-install')">
+                                <i class="far fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <pre class="command-group"><code id="kusion-install">helm repo add kusion-stack https://charts.kusionstack.io && helm repo update && helm install kusion-stack kusion-stack/kusion</code></pre>
+                </div>
+            </div>
+            <div class="cta-buttons">
+                <div class="next-steps">
+                    <a href="https://www.kusionstack.io/docs/next/" class="primary-button" target="_blank">Quickstart Guide</a>
+                    <a href="https://www.kusionstack.io/docs/next/user-guides/working-with-k8s/deploy-application" class="primary-button" target="_blank">Browse Examples</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>KusionStack</h4>
+                    <p>Kusion is part of KusionStack, a CNCF Sandbox Project</p>
+                    <div class="social-links">
+                        <a href="https://github.com/KusionStack/kusion" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/KusionStack" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://join.slack.com/t/kusionstack/shared_invite/zt-2drafxksz-VzCZZwlraHP4xpPeh_g8lg" target="_blank"><i class="fab fa-slack"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <a href="https://www.kusionstack.io/docs/next/" target="_blank">Documentation</a>
+                    <a href="https://www.kusionstack.io/docs/next/user-guides/working-with-k8s/deploy-application" target="_blank">Tutorials</a>
+                    <a href="https://blog.kusionstack.io/" target="_blank">Blog</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <a href="https://github.com/KusionStack/kusion" target="_blank">GitHub</a>
+                    <a href="https://join.slack.com/t/kusionstack/shared_invite/zt-2drafxksz-VzCZZwlraHP4xpPeh_g8lg" target="_blank">Slack</a>
+                    <a href="https://twitter.com/KusionStack" target="_blank">Twitter</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Stay updated with our latest features</p>
+                    <form class="newsletter-form" onsubmit="return handleSubscribe(event)">
+                        <input type="email" placeholder="Enter your email" required aria-label="Email for newsletter">
+                        <button type="submit"></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright 2025 KusionStack Authors. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our <a href="https://www.linuxfoundation.org/trademark-usage/" target="_blank">Trademark Usage</a> page.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
