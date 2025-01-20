@@ -279,7 +279,7 @@ body::before {
     gap: 6rem;
     align-items: center;
     margin-top: auto;
-    max-width: 1400px;
+    max-width: 1350px;
 }
 
 .hero-content {
