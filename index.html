@@ -42,7 +42,7 @@
     <header class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>App Delivery Made Simple<span class="gradient-text"></span></h1>
+                <h1>Application Delivery Made Simple<span class="gradient-text"></span></h1>
                 <p class="subtitle typewriter"><span class="typing"></span><span class="cursor">|</span></p>
                 <div class="hero-stats">
                     <div class="stat-item">
@@ -71,7 +71,13 @@
             </div>
             <div class="hero-image">
                 <div class="gradient-blob"></div>
-                <img src="images/og.png" alt="Kusion Architecture Overview" class="main-image">
+                <video class="main-video" controls autoplay muted playsinline id="heroVideo">
+                    <source src="images/kusion_demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="custom-controls">
+                    <input type="range" class="video-progress" value="0" step="0.1">
+                </div>
             </div>
         </div>
     </header>
@@ -96,7 +102,7 @@
                     <div class="feature-icon">
                         <i class="fas fa-diagram-project"></i>
                     </div>
-                    <h3>Unified Workflow</h3>
+                    <h3>Single Workflow</h3>
                     <p>Manage both infrastructure and Kubernetes resources in a single, consistent workflow. Experience the simplicity of Terraform-like operations for your entire stack.</p>
                     <a href="https://www.kusionstack.io/docs/next/user-guides/working-with-k8s/deploy-application" class="learn-more" target="_blank">Learn more <i class="fas fa-arrow-right"></i></a>
                 </div>
@@ -140,7 +146,7 @@
                         </ul>
                     </div>
                     <div class="use-case-image">
-                        <img src="images/application-lifecycle.png" alt="Application Lifecycle Management - A dynamic visualization showing the continuous cycle of creating, configuring, monitoring, and updating application resources">
+                        <img src="images/app-preview.png" alt="Application Lifecycle Management - A dynamic visualization showing the continuous cycle of creating, configuring, monitoring, and updating application resources">
                     </div>
                 </div>
                 <div class="use-case-card">
@@ -155,7 +161,7 @@
                         </ul>
                     </div>
                     <div class="use-case-image">
-                        <img src="images/separation-of-concerns.png" alt="Team Collaboration - A visualization showing how different teams interact through the KusionStack platform">
+                        <img src="images/environment-configs.png" alt="Team Collaboration - A visualization showing how different teams interact through the KusionStack platform">
                     </div>
                 </div>
                 <div class="use-case-card">
@@ -170,7 +176,7 @@
                         </ul>
                     </div>
                     <div class="use-case-image">
-                        <img src="images/separation-of-concerns.png" alt="Team Collaboration - A visualization showing how different teams interact through the KusionStack platform">
+                        <img src="images/app-res-graph.png" alt="Team Collaboration - A visualization showing how different teams interact through the KusionStack platform">
                     </div>
                 </div>
             </div>
@@ -194,13 +200,13 @@
                             </button>
                         </div>
                     </div>
-                    <pre class="command-group"><code id="kusion-install">helm repo add kusion-stack https://charts.kusionstack.io && helm repo update && helm install kusion-stack kusion-stack/kusion</code></pre>
+                    <pre class="command-group"><code id="kusion-install">helm repo add kusionstack https://kusionstack.github.io/charts && helm repo update && helm install kusionstack kusionstack/kusion</code></pre>
                 </div>
             </div>
             <div class="cta-buttons">
                 <div class="next-steps">
-                    <a href="https://www.kusionstack.io/docs/next/" class="primary-button" target="_blank">Quickstart Guide</a>
-                    <a href="https://www.kusionstack.io/docs/next/user-guides/working-with-k8s/deploy-application" class="primary-button" target="_blank">Browse Examples</a>
+                    <a href="https://www.kusionstack.io/docs/next/" class="primary-button" target="_blank"><span>Quickstart Guide</span></a>
+                    <a href="https://www.kusionstack.io/docs/next/user-guides/working-with-k8s/deploy-application" class="primary-button" target="_blank"><span>Browse Examples</span></a>
                 </div>
             </div>
         </div>
@@ -246,5 +252,6 @@
     </footer>
 
     <script src="main.js"></script>
+    <script src="js/video-progress.js"></script>
 </body>
 </html>
