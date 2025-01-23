@@ -455,8 +455,7 @@ body::before {
     gap: 1rem;
     margin: 0.5rem 0;
     padding: 0.75rem;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(8px);
+    background: rgba(30, 41, 59, 0.7);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: var(--border-radius);
 }
@@ -465,8 +464,7 @@ body::before {
     flex: 1;
     text-align: center;
     padding: 0.75rem;
-    background: rgba(255, 255, 255, 0.03);
-    backdrop-filter: blur(4px);
+    background: rgba(15, 23, 42, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: calc(var(--border-radius) - 4px);
     transition: transform 0.2s ease, background-color 0.2s ease;
@@ -474,7 +472,7 @@ body::before {
 
 .stat-item:hover {
     transform: translateY(-2px);
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(30, 41, 59, 0.8);
 }
 
 .stat-number {
@@ -1420,7 +1418,7 @@ body::before {
     .use-case-content {
         flex: 1;
         padding-right: 0;
-        order: 1;
+        order: 2;
     }
 
     .use-case-image {
@@ -1428,6 +1426,20 @@ body::before {
         max-width: 100%;
         height: 200px;
         padding: 0;
+        order: 1;
+    }
+
+    /* Override the second use case card's row-reverse layout */
+    .use-case-card:nth-of-type(2) {
+        flex-direction: column;
+    }
+
+    .use-case-card:nth-of-type(2) .use-case-content {
+        order: 2;
+    }
+
+    .use-case-card:nth-of-type(2) .use-case-image {
+        order: 1;
     }
 
     /* Code Block */
